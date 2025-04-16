@@ -22,13 +22,12 @@ SpeechOcean762 (licenced with CC BY 4.0), an open source dataset is used in this
 In this work, we utilize the following features:
 
  - GOP (Goodness-of-Pronunciation) Features
- - Energy
- - Duration
- - Self-Supervised Learning Audio Features (e.g., Wav2vec 2.0, HuBERT, WavLM)
+ - Energy Features
+ - Duration Features
+ - Self-Supervised Learning Audio Features (e.g., Wav2vec 2.0, HuBERT, WavLM) Features
+ - Word IDs Features
 
-These features have been compressed and are available for [download](#). After downloading, extract the files and place them in the `data` directory.
-
-To understand how the GOP features are obtained, refer to the [gop_speechocean762](https://github.com/kaldi-asr/kaldi/tree/master/egs/gop_speechocean762) recipe in the Kaldi project. Additionally, the [GOPT](https://github.com/YuanGongND/gopt) (Gong et al., 2022) GitHub repository provides a comprehensive tutorial on performing inference with your own data.
+Please refer the [README.md](data/README.md) in the `data` directory to understand more.
 
 ## Citing
 

@@ -388,7 +388,7 @@ class W2UFeatGen(nn.Module):
 class AttentionPooling(nn.Module):
 
     def __init__(self, dim, mlp_ratio=4., drop=0., attn_drop=0.,
-                 drop_path=0., act_layer=nn.GELU, norm_layer=nn.LayerNorm):
+                 drop_path=0., act_layer=nn.GELU):
         super().__init__()
         mlp_hidden_dim = int(dim * mlp_ratio)
         self.pooling_proj = torch.nn.Linear(dim, 1)
